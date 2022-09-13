@@ -1,0 +1,91 @@
+/* Root var */
+:root {
+  /* ==== Colors ==== */
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: rgb(202, 53, 53);
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: rgb(5, 5, 5);
+
+  /* ==== Transition ==== */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+/* Root var End */
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Global End */
+
+/* Main */
+form {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 10px 15px 10px rgb(0, 0, 0, 0.5);
+  border-radius: 25px;
+  margin: 10px;
+}
+.input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+.input::placeholder {
+  color: lightgrey;
+}
+.btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: var(--tran-03);
+}
+.btn:hover {
+  filter: brightness(0.9);
+}
+.score {
+  color: var(--primary-color);
+}
+/* Main End */
+
+/* Media */
+
+/* Media End */
